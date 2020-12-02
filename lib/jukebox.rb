@@ -49,6 +49,7 @@ def run(songs)
   help
   response=nil
   while response != "exit"
+    puts "Please enter a command:"
   response = gets.strip
     if response == "list"
       list(songs)
