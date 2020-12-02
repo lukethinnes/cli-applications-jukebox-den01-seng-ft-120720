@@ -44,3 +44,20 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
+
+def run
+  puts "Please enter a command:"
+  response = gets.strip
+  while response
+    if response == "exit"
+      exit_jukebox
+    elsif response == "list"
+      list
+    elsif response == "play"
+      play
+    elsif response == "help"
+      help
+    else
+      puts "Please enter a valid command"
+    end
+end
