@@ -48,7 +48,7 @@ end
 def run(songs)
   help
   response=nil
-  while response != "exit"
+  while response
     puts "Please enter a command:"
   response = gets.strip
     if response == "list"
@@ -57,6 +57,8 @@ def run(songs)
       play(songs)
     elsif response == "help"
       help
+    elsif response == "exit"
+      exit_jukebox
     else
       puts "Invalid input, please try again"
     end
