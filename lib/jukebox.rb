@@ -46,9 +46,9 @@ def exit_jukebox
 end
 
 def run(songs)
-  response=nil
+  response=""
+  puts "Please enter a command:"
   while response != "exit"
-    puts "Please enter a command:"
     response = gets.chomp
       if response == "list"
         list(songs)
