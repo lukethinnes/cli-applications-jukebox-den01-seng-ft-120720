@@ -56,11 +56,12 @@ def run(songs)
         play(songs)
       elsif response == "help"
         help
-      elsif response == "exit"
-        exit_jukebox
       else
         puts "Invalid input, please try again"
       end
+    end
+    if response == "exit"
+      exit_jukebox
     end
   exit_jukebox
 end
