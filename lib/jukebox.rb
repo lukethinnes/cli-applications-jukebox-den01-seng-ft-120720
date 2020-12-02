@@ -60,4 +60,5 @@ def run
     else
       puts "Please enter a valid command"
     end
+  end
 end
